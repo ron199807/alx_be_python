@@ -3,6 +3,6 @@ number2 = 5
 sum1 = namer1 + number2
 subtraction = number1 - number2
 product =  number1 * number2
-print("addition of 10 and 5 is" sum1)
-print("subtraction of 10 and 5 is" subtraction)
-print("multiplication of 10 and 5 is" product)
+print("Addition of" number1 "and" number2 "is" sum1)
+print("Subtraction of" number1 "and" number2 "is" subtraction)
+print("Multiplication of" number1 "and"number2 "is" product)
