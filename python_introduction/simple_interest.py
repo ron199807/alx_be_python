@@ -6,4 +6,4 @@ time=3
 # calculations
 interest = principal * rate * time
 
-print("The simple interest is:", SPI)
+print("The simple interest is:", interest)
