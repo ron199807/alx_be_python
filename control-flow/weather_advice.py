@@ -1,5 +1,5 @@
 # promptting user 
-weather = input("what's the weather like today? (suuny/rainy/cold): ")
+weather = input("what's the weather like today?(suuny/rainy/cold): ")
 
 #wheather checker and prints recommendations
 if weather == "sunny":
