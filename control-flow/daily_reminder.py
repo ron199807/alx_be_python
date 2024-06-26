@@ -6,14 +6,22 @@ priority = input("Priority (high/medium/low): ").strip().lower()
 time_bound = input("Is it time-bound? (yes/no): ").strip().lower()
 
 # Match Case (Python 3.10+) or if-elif ladder
-if priority == "high":
-    reminder = f"'{task}' is a high priority task"
-elif priority == "medium":
-    reminder = f"'{task}' is a medium priority task"
-elif priority == "low":
-    reminder = f"'{task}' is a low priority task"
-else:
-    reminder = f"'{task}' has an unspecified priority"
+match priority:
+
+    case priority == "high":
+        reminder = f"'{task}' is a high priority task"
+        print(reminder)
+
+    case priority == "medium":
+         reminder = f"'{task}' is a medium priority task"
+         print(reminder)
+    case priority == "low":
+        reminder = f"'{task}' is a low priority task"
+        print(reminder)
+    
+    case _:
+        reminder = f"'{task}' has an unspecified priority"
+        print(reminder)
 
 # Check time sensitivity
 if time_bound == "yes":
