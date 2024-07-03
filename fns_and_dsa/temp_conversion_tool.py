@@ -28,7 +28,7 @@ def main():
             print("Invalid scale. please enter 'C' for Celsius or 'F' for Fahrenheit.")
 
     except ValueError:
-        print("Invalid temperature. please enter a numeric value.")
+        print("Invalid temperature. Please enter a numeric value.")
 
 
 
