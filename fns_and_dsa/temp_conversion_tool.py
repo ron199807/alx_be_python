@@ -15,15 +15,15 @@ def convert_to_fahrenheit(celsius):
 def main():
     try:
 
-        temperature = float(input("Enter the temperature: "))
-        scale = input("Is this temperature in (C)elsius or (F)ahrenheit? ").strip().lower()
+        temperature = float(input("Enter the temperature to convert: "))
+        scale = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").strip().lower()
 
         if scale == 'c':
             converted_temp = convert_to_fahrenheit(temperature)
             print(f"{temperature}°C is {converted_temp:.2f}°F")
         elif scale == "f":
             converted_temp = convert_to_celsius(temperature)
-            print(f"{temperature}°F is {convert_temp:.2f}°C")
+            print(f"{temperature}°F is {converted_temp:.2f}°C")
         else:
             print("Invalid scale. please enter 'C' for Celsius or 'F' for Fahrenheit.")
 
