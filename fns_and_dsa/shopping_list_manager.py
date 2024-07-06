@@ -23,9 +23,8 @@ def view_list(shopping_list):
         print("\nCurrent shopping list: ")
         for i, item in enumerate(shopping_list, start=1):
             print(f"{i}. {item}")
-
-        else:
-            ("\nThe shopping list is empty.")
+    else:
+        ("\nThe shopping list is empty.")
 
 def main():
     shopping_list = []
