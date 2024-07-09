@@ -10,7 +10,7 @@ def safe_divide(numerator, denominator):
         print(f"Error: {e}")
         return None
     except ValueError:
-        return "Error: both inputs must be numeric."
+        return "Error: Please enter numeric values only"
     except Exception as e:
         return f"Unexpected error: {e}"
 
