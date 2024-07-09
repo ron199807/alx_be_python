@@ -4,7 +4,7 @@ def safe_divide(numerator, denominator):
         denominator = float(denominator)
 
         if denominator == 0:
-            raise ZeroDivisionError("Error: Cannot be zero.")
+            raise ZeroDivisionError("Error: Cannot divide by zero.")
         return numerator / denominator
     except ZeroDivisionError as e:
         print(f"Error: {e}")
