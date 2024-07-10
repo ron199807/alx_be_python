@@ -4,11 +4,12 @@ def safe_divide(numerator, denominator):
         denominator = float(denominator)
 
         if denominator == 0:
-            raise ZeroDivisionError("Error: Cannot divide by zero.")
+            raise ZeroDivisionError("Cannot divide by zero.")
+            
         result = numerator / denominator
         return f"The result of the division is {result}"
     except ZeroDivisionError as e:
-        print(f"Error: {e}")
+        
     except ValueError:
         return "Error: Please enter numeric values only."
     except Exception as e:
