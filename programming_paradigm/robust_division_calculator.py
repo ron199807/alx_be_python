@@ -1,4 +1,4 @@
-# robust_division_calculator.py
+# robust division calculator
 
 def safe_divide(numerator, denominator):
     try:
